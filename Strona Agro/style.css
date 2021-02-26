@@ -1,0 +1,250 @@
+html{
+    margin:0;
+    padding:0;
+    height:100%;
+    background-color: #003300;
+    /*background-repeat: no-repeat;*/
+}
+body{
+    position: relative;
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    background-color: #003300;  
+}
+                        
+.tekst {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffbf00;
+    font-size: 50px;
+    margin: 10px;
+}
+header{
+    width: 100%;
+    height:100px;
+    display: block;
+    color:chartreuse;
+}
+                        
+#kontener {
+    width: 100%;
+    margin: 0 auto;
+    min-height:100%;
+	position:relative;
+}
+                        
+#gorna_czesc_kontenera {
+    position:relative;
+    margin-top: 5px;
+    /*background-image: url(obrazy/gora_i_dol.gif);*/
+    width: 100%;
+    height: 100px;
+}
+/*-------------------------------------ROZWIJANE MENU--------------------------------------*/
+                        
+#menu {
+    margin-left: 27%;
+}
+                        
+#menu ul {
+    padding: 0;
+    left: 50%;
+}
+                        
+#menu a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    width: 80px;
+}
+                        
+#menu a:link {
+    text-decoration: none;
+    color: white;
+}
+                        
+#menu a:visited {
+    text-decoration: none;
+    color: white;
+}
+                        
+#menu li {
+    list-style: none;
+}
+                        
+#menu>li {
+    float: left;
+}
+                        
+#menu>li>a {
+    padding: 30px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: linear-gradient(rgba(255, 191, 0, 0.8) 0%, rgba(167, 128, 13, 0.8) 100%);
+    transition: 0.5s;
+    width: auto;
+    height: 20px;
+    font-size: 20px;
+}
+                        
+#menu>li>a:hover {
+    background: linear-gradient(rgba(255, 191, 0, 1) 0%, rgba(167, 128, 13, 1) 100%);
+    color: #2e3c2e;
+    cursor: pointer;
+}
+                        
+#menu>li:first-child>a {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+                        
+#menu>li:last-child>a {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+                        
+#menu>li ul li a {
+    padding: 0px 30px;
+    border-bottom: 1px solid #ccc;
+    transition: 0.2s;
+    font-size: 18px;
+}
+                        
+#menu>li ul li a:hover {
+    background: linear-gradient(rgba(255, 191, 0, 1) 0%, rgba(167, 128, 13, 1) 100%);
+    cursor: pointer;
+    color: #2e3c2e;
+    height: 35px;
+}
+                        
+#menu>li ul {
+    background: linear-gradient(rgba(255, 191, 0, 0.8) 0%, rgba(167, 128, 13, 0.8) 100%);
+    opacity: 0;
+}
+                        
+#menu>li:hover ul {
+    transition: 0.8s;
+    opacity: 1;
+}
+/*-------------------------------------------------------------------------------------------*/
+                        
+#infobox {
+    height: 380px;
+    background-color: #ffbf00;
+}
+                        
+#infobox_break {
+    height: 30px;
+}
+#kontakt_box {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    font-family: Helvetica, sans-serif;
+    color: #ffbf00;
+    line-height: 125%;
+}
+/* -----------------------------------------ZAWARTOŚĆ GŁÓWNA STRONY-----------------------------------------*/
+                        
+#zawartosc {
+    width: 944px;
+ }
+                        
+#gorna_czesc_zawartosci {
+    background-image: url('obrazy/Agro_zdjecie.webp');
+    width: 944px;
+    height: 700px;
+}
+                        
+#srodkowa_czesc_zawartosci {
+    width: 944px;
+    background-repeat: repeat-y;
+}
+                        
+#dolna_czesc_zawartosci {
+    width: 944px;
+    height: 31px;
+}
+                        
+p{
+    margin-bottom: 15px;
+}
+/*----------------------------------------------FOOTER-----------------------------*/
+#footer 
+{ 
+    bottom:0;
+    border: 3px dotted red;
+    height: 125px;
+    color:#FFF; 
+    width:100%;
+}
+#footer2
+{
+    position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;		/* Wysokość stopki */
+	background:#b5fbbd;
+}
+#zawartosc2
+{
+	padding:10px;
+	padding-bottom:60px;	/* Wysokość stopki */
+}
+#nav_box {
+    position: absolute;
+    right:700px;
+    top: 2140px;
+    font-family: Helvetica, sans-serif;
+    color:white;
+}
+#nav_box table tr td{
+    font-size: 30px;
+    left:50px;
+}
+#img{
+    position: absolute;
+    right:910px;
+    top: 2145px;
+}
+#foot_info {
+    position: absolute;
+    font-size: 30px;
+    left: 40px;
+}
+#link tr td a{
+    font-size: 20px;
+    color:orange;
+    text-decoration: none;
+}
+#link tr td a:hover{
+    color:greenyellow;
+}
+#ikonka{
+
+}
+
+/* ---------------------------------------------------------button kontakt----------------------------------------*/
+.button {
+    position: absolute;
+   
+    padding: 30px 50px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    /*outline: none;*/
+    color: #fff;
+    background-color: #3e8e41;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.button:hover {background-color: #4CAF50}
+  
+.button:active {
+    background-color: #4CAF50;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
