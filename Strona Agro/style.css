@@ -299,9 +299,9 @@ p{
 }
 #kontaktBox2{
     position: relative;
-    width:85%;
+    width:65%;
     height: 50%;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 #nav{
     padding: 5px;
@@ -327,3 +327,23 @@ textarea{
 
 
   /*******************************koniec kontaktBox************************************/
+#informacje{
+    border:2px solid red;
+    position: relative;
+    font-size: 20px;
+    width:85%;
+    height: 300px;
+}
+#test{
+    position: relative;
+    border:1px solid red;
+    left:465px;
+    padding-right: 30px;
+    width:50%;
+    height: 700px;
+}
+#info_serwis{
+    font-size: 30px;
+    height: 50%;
+    padding-top: 220px;
+}
