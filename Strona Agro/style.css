@@ -7,7 +7,6 @@ body{
     position: relative;
     margin:0;
     padding:0;
-    /*min-height: 100%;*/
     height: 100%;
     background-image: url('obrazy/znak_wodny.jpg');
 }
@@ -79,8 +78,9 @@ a:hover{
 #menu>li {
     float: left;
 }
-                        
-#menu>li>a {
+
+/*pierwsze menu*/           
+#menu>li>a { 
     padding: 30px;
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -96,29 +96,32 @@ a:hover{
     color: #2e3c2e;
     cursor: pointer;
 }
-                        
+/* zaokrąglenia górnego menu - pierwszy element*/      
 #menu>li:first-child>a {
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 }
-                        
+/* zaokrąglenia górnego menu - ostatni element*/
 #menu>li:last-child>a {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-                        
+/* rozwijane menu - drugi poziom*/
 #menu>li ul li a {
-    padding: 0px 30px;
+    /*padding: 0px 30px;*/
     border-bottom: 1px solid #ccc;
     transition: 0.2s;
-    font-size: 18px;
-}
-                        
+    font-size: 20px;
+    /*background-color: crimson;*/
+    width: auto;
+    text-align: center;
+}        
 #menu>li ul li a:hover {
     background: linear-gradient(rgba(255, 191, 0, 1) 0%, rgba(167, 128, 13, 1) 100%);
     cursor: pointer;
     color: #2e3c2e;
-    height: 35px;
+    text-align: center;
+    padding: 3px 0px;
 }                    
 #menu>li ul {
     background: linear-gradient(rgba(255, 191, 0, 0.8) 0%, rgba(167, 128, 13, 0.8) 100%);
@@ -299,7 +302,7 @@ p{
 }
 #kontaktBox2{
     position: relative;
-    width:65%;
+    width: 1280px;
     height: 50%;
     /*border: 2px solid green;*/
 }
@@ -333,6 +336,7 @@ textarea{
     font-size: 20px;
     width:85%;
     height: 300px;
+    width: 1280px;
 }
 #test{
     position: relative;
@@ -346,4 +350,25 @@ textarea{
     font-size: 30px;
     height: 50%;
     padding-top: 220px;
+}
+
+#kontenerek{
+    position: relative;
+    border: 2px solid black;
+    height: 300px;
+    width: 1200px;
+}
+#kontenerekLw{
+    position: absolute;
+    left: 0;
+    width:50%;
+    height: 100%;
+    background-color: #ffbf00;
+}
+#kontenerekPr{
+    position: absolute;
+    right: 0;
+    width:50%;
+    height: 100%;
+    background-color: #ffbf00;
 }
